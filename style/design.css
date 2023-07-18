@@ -120,7 +120,8 @@ body{
     color: #FFF;
     border-radius: 31px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
-    margin-top: 10px;
+    margin-top: 20px;
+    border: 0;
 }
 .button-extra{
     background: #4EC5F7;
@@ -137,6 +138,52 @@ body{
     width: 100%;
 }
 /* the banner-container ends here */
+
+/* the banner-container-two start here */
+.banner-two-left{
+    width: 60%;
+}
+.banner-two-img{
+    width: 100%;
+}
+.banner-two-right{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-two-title{
+    font-size: 1.93rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-two-description{
+    color: #534C64;
+    font-size: 0.76rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-two-commitment{
+    color: #534C64;
+    font-size: 1.292rem;
+    font-weight: 700;
+
+}
+.banner-two-purpose{
+    color: #534C64;
+    font-size: 0.968rem;
+    font-weight: 500;
+}
+.banner-container-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -159,11 +206,15 @@ body{
 
 
 .banner-container-one{
+    margin-top: 30px;
     flex-direction: column-reverse;
 
 }
 .banner-one-left{
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 0.5rem;
 }
 .banner-one-right{
     width: 80%;
@@ -171,6 +222,17 @@ body{
 }
 .banner-one-left{
     width: 80%;
+}
+
+
+.banner-container-two{
+    flex-direction: column;
+    margin-top: 30px;
+}
+.banner-two-right{
+    width: 80%;
+   text-align: center;
+   font-size: 0.5rem;
 }
 
 
@@ -184,7 +246,7 @@ body{
 
     }
     .banner-one-buttons{
-        margin-left: 180px;
+       
 
     }
     
