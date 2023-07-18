@@ -86,7 +86,6 @@ body{
     height: auto;
     background-image: url("../images/Group\ 14.png");
     fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    
    
 }
 .banner-one-heading{
@@ -178,6 +177,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 
 }
 
@@ -234,6 +234,55 @@ body{
 /* the video-container end here */
 
 
+/* the game-container start here */
+.game-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    background: #FFF;
+   
+}
+.game-left{
+    width: 50%;
+}
+.game-image{
+    width: 70%;
+    height: auto;
+    position: relative;
+}
+.game-small-image{
+    width: 120px;
+    height: 140px;
+    position: absolute;
+    margin-top: 16%;
+    margin-left: -3%;
+}
+.game-title{
+     font-size: 1.94rem;
+     font-weight: 700;
+     color: #0B0223;
+}
+.game-title-extra{
+    font-size: 1.94rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.game-description{
+    font-size: 0.73rem;
+    font-weight: 400;
+    color: #534C64;
+    margin-top: 12px;
+}
+.game-right{
+    width: 40%;
+}
+/* the game-container end here */
+
+
 @media screen and (max-width:576px) {
     /* the nav-container start here */
     .nav-container{
@@ -249,7 +298,7 @@ body{
         margin-bottom: 50px;
     }
     /* the banner-container-one start here */
-
+    .game-container,
     .banner-container-one{
         margin-top: 30px;
         flex-direction: column-reverse;
@@ -292,7 +341,25 @@ body{
 
     /* the nav-container start here */
     
-
+    .game-left{
+        width:80%;
+        margin-top: 40px;
+    }
+    .game-small-image{
+        width: 120px;
+        height: 140px;
+        position: absolute;
+        margin-top: 30%;
+        margin-left: -10%;
+    }
+    .game-right{
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .game-container{
+        padding: 30px;
+    }
     
     
 }
@@ -353,5 +420,9 @@ body{
     .card{
         width: 20%;
         margin: 0px auto;
+    }
+
+    .game-container{
+        padding: 30px;
     }
 }
