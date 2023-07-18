@@ -158,7 +158,7 @@ body{
 }
 
 
-/* .banner-container-one{
+.banner-container-one{
     flex-direction: column-reverse;
 
 }
@@ -168,4 +168,25 @@ body{
 .banner-one-right{
     width: 80%;
     margin-top: 70px;
-} */
+}
+.banner-one-left{
+    width: 80%;
+}
+
+
+@media screen and (min-width:576px) and (max-width: 992px){
+    .nav-container{
+        flex-direction: column;
+    }
+    
+    .banner-container-one{
+        text-align: center;
+
+    }
+    .banner-one-buttons{
+        margin-left: 180px;
+
+    }
+    
+    
+}
