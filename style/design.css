@@ -4,6 +4,7 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 .primary-color{
     color: #F948B2;
@@ -71,11 +72,7 @@ body{
     font-weight: 500;
    
 }
-/* .menu-extra{
-    color: #3C354F;
-    font-size: 0.73rem;
-    font-weight: 500;
-} */
+
 /* the nav-container ends here */
 
 /* the banner-container start here */
@@ -148,8 +145,7 @@ body{
 }
 .banner-two-right{
     width: 40%;
-    display: flex;
-    justify-content: flex-end;
+    
 }
 .banner-two-title{
     font-size: 1.93rem;
@@ -158,6 +154,7 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+     
 }
 .banner-two-description{
     color: #534C64;
@@ -185,8 +182,60 @@ body{
 }
 
 
+/* the banner-container-two start here */
+
+
+/* the video-container start here */
+.video-title{
+    color: #0B0223;
+    font-size: 1.94rem;
+    font-weight: 700;
+
+}
+.video-title-extra{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.94rem;
+    font-weight: 700;
+
+}
+.video-description{
+    font-size: 0.73rem;
+    font-weight: 400;
+    color: #534C64;
+}
+.video-container div{
+    text-align: center;
+    margin-top: 40px;
+}
+.card{
+    width: 23%;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 16px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.card-image{
+    width: 100%;
+}
+.video-cards{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.card-description{
+    color: #534C64;
+    font-size:0.8rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+/* the video-container end here */
+
 
 @media screen and (max-width:576px) {
+    /* the nav-container start here */
     .nav-container{
         flex-direction: column;
     }
@@ -199,56 +248,110 @@ body{
     .nav-left{
         margin-bottom: 50px;
     }
-    .d{
-       margin: 30px auto;
-    }   
+    /* the banner-container-one start here */
+
+    .banner-container-one{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    
+    }
+    .banner-one-left{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 0.5rem;
+    }
+    .banner-one-right{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .banner-one-left{
+        width: 80%;
+    }
+
+    /* the banner-container-two start here */
+    
+    .video-cards,
+    .banner-container-two{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .banner-two-right{
+        width: 80%;
+       text-align: center;
+       font-size: 0.5rem;
+    }
+
+    /* the video-container start here */
+
+    
+    .card{
+        width: 60%;
+        margin: 0px auto;
+    }
+
+    /* the nav-container start here */
+    
+
+    
+    
 }
 
 
-.banner-container-one{
-    margin-top: 30px;
-    flex-direction: column-reverse;
-
-}
-.banner-one-left{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    font-size: 0.5rem;
-}
-.banner-one-right{
-    width: 80%;
-    margin-top: 70px;
-}
-.banner-one-left{
-    width: 80%;
-}
-
-
-.banner-container-two{
-    flex-direction: column;
-    margin-top: 30px;
-}
-.banner-two-right{
-    width: 80%;
-   text-align: center;
-   font-size: 0.5rem;
-}
 
 
 @media screen and (min-width:576px) and (max-width: 992px){
+
+    /* the nav-container start here */
+
     .nav-container{
         flex-direction: column;
     }
+
+
+    /* the banner-container-one here */
     
     .banner-container-one{
-        text-align: center;
+        margin-top: 70px;
+        flex-direction: column-reverse;
+    
+    }
+    .banner-container-one{
+        text-align: center;  
 
     }
-    .banner-one-buttons{
-       
+    .banner-one-right{
+        width: 80%;
+        margin-top: 70px;
+        padding: 70px;
+    }
+    .banner-one-left{
+        width: 80%;
+        padding: 70px;
+    }
+    .banner-one-button{
+        margin-left: 90px;
 
     }
     
+
+    /* the banner-container-two start here */
+
+
+    .banner-container-two{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .banner-two-right{
+        width: 80%;
+       text-align: center;
+    }
+
+    /* the video-container start here */
+
     
+    .card{
+        width: 20%;
+        margin: 0px auto;
+    }
 }
