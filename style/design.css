@@ -10,10 +10,12 @@
     color: #F948B2;
 }
 body{
-    max-width: 930px;
-    margin: 24.5px auto;
+    width: 930px;
+    margin: 0px auto;
 }
+
 /* the nav-container start here */
+
 .nav-container{
     padding: 10px;
     height: auto;
@@ -54,6 +56,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 40%;
+    cursor: pointer;
 }
 .nav-right a{
     text-decoration: none;
@@ -84,9 +87,6 @@ body{
 .banner-one-left{
    width: 50%;
     height: auto;
-    background-image: url("../images/Group\ 14.png");
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-   
 }
 .banner-one-heading{
     font-size: 2rem;
@@ -108,8 +108,12 @@ body{
     width: 500;
     margin-top: 10px;
 }
-.banner-one-information li{
-    list-style: none;
+.banner-info{
+    color: #534C64;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 12px;
+
 }
 .banner-one-button{
     width: max-content;
@@ -128,6 +132,7 @@ body{
 .banner-one-buttons{
     display: flex;
     gap: 30px;
+    cursor: pointer;
 }
 
 .banner-one-right{
@@ -181,7 +186,9 @@ body{
     align-items: center;
     justify-content: space-between;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-
+}
+.banner-two-button{
+    cursor: pointer;
 }
 
 
@@ -309,15 +316,17 @@ body{
     margin: 0px auto;
     border-radius: 50px;
     background: #FFF;
+    cursor: pointer;
    
  }
- #suggest-game-extra{
-    border: #FF42A5;
-    color: #F948B2;
- }
+ 
  .suggest-game:hover{
+    
+    border: 1px solid #F948B2;
+ }
+ .suggest-game:hover .suggest-game-name{
+
     color: #F948B2;
-    border: 1px solid #4EC5F7;
  }
  .suggest-games-container{
     display: flex;
@@ -328,6 +337,65 @@ body{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
  }
  /* the suggest-game-container ends here  */
+
+
+ /* the careers-container start here */
+
+.career-title{
+    font-size: 1.94rem;
+    font-weight:700 ;
+    color: #FFF;
+}
+.career-description{
+    font-size: 0.73rem;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 20px;
+}
+.career-columns-start,
+.career-columns-end{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color:  #FFF;
+}
+.career-columns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.career-button{  
+    color: #FF42A5;
+    background-color: #fff;
+    width: max-content;
+    font-size: 0.8rem;
+    padding: 13.56px 25.833px;
+    width: 600;
+    border-radius: 31px;
+    margin-top: 20px;
+    border: 0;
+    cursor: pointer;
+}
+.career-left{
+    width: 50%;
+    background-image: url("../images/Group\ 14.png");
+    padding: 40px;
+}
+.career-right{
+    width: 50%;
+}
+.career-image{
+    width: 100%;
+}
+.career-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F948B2;
+}
+
+
+ /* the careers-container ends here */
 
  /* the footer-container start here */
 
@@ -370,6 +438,7 @@ body{
     align-items: center;
     margin: 20px auto;
     width: 25%;
+    cursor: pointer;
  }
  .policy-title{
     color: rgba(255, 255, 255, 0.60);
@@ -452,6 +521,11 @@ body{
         width: 60%;
         margin: 0px auto;
     }
+    .card-image{
+        width: 70%;
+        height: 80%;
+
+    }
 
     /* the nav-container start here */
     
@@ -460,11 +534,11 @@ body{
         margin-top: 40px;
     }
     .game-small-image{
-        width: 120px;
-        height: 140px;
+        width: 170px;
+        height: 190px;
         position: absolute;
-        margin-top: 30%;
-        margin-left: -10%;
+        margin-top: 75%;
+        margin-left: -20%;
     }
     .game-right{
         width: 90%;
@@ -476,18 +550,30 @@ body{
     }
     /* the suggest-game-container start here  */
     .suggest-games-container{
-        gap: 5px;
-        padding: 30px 15px;
+        column-gap: 50px;
+        padding: 100px;
         background: transparent;
     }
     .suggest-game-image{
-        height: 1.42rem;
-        width: 1.42rem;
+        height: 2.42rem;
+        width: 2.42rem;
         border-radius: 50%;
      }
      .suggest-game-name{
-        font-size: 0.707rem;
+        font-size: .907rem;
      }
+
+     /* the careers-container start here */
+
+     .career-container{
+        flex-direction: column;
+     }
+     .career-left{
+        width: 100%;
+     }
+     .career-right{
+        width: 80%;
+    }
 
      /* the footer-container start here */
 
@@ -501,6 +587,9 @@ body{
      .footer-policy-container{
         width: 60%;
      }
+
+
+     
      
     
     
@@ -570,12 +659,12 @@ body{
     }
     /* the suggest-game-container start here  */
     .suggest-games-container{
-        gap: 15px;
+        column-gap: 45px;
         padding: 30px 15px;
     }
     .suggest-game-image{
-        height: 1.8rem;
-        width: 1.8rem;
+        height: 2.8rem;
+        width: 2.8rem;
         border-radius: 50%;
      }
 }
