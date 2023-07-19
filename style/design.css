@@ -1,7 +1,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@600;700&family=Work+Sans:wght@800&display=swap');
 *{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans';
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -15,8 +15,8 @@ body{
 }
 /* the nav-container start here */
 .nav-container{
-   
-    height: 84px;
+    padding: 10px;
+    height: auto;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -107,6 +107,9 @@ body{
     color: #534C64;
     width: 500;
     margin-top: 10px;
+}
+.banner-one-information li{
+    list-style: none;
 }
 .banner-one-button{
     width: max-content;
@@ -308,12 +311,12 @@ body{
     background: #FFF;
    
  }
-.suggest-games-container .suggest-game-extra{
+ #suggest-game-extra{
     border: #FF42A5;
     color: #F948B2;
  }
  .suggest-game:hover{
-   color: #F948B2;
+    color: #F948B2;
     border: 1px solid #4EC5F7;
  }
  .suggest-games-container{
@@ -322,6 +325,70 @@ body{
     margin-top: 50px;
     gap: 30px;
     padding:  70px 0;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+ }
+ /* the suggest-game-container ends here  */
+
+ /* the footer-container start here */
+
+ .footer-container{
+    background: #0B0223;
+ }
+
+ .footer-heading{
+    width: max-content;
+    margin: 30px auto;
+    padding-top: 50px;
+ }
+ .footer-title{
+    color: #FFF;
+ }
+
+ .our-information-title{
+    font-size: 0.73rem;
+    width: 600;
+    color: #FFF;
+
+ }
+ .footer-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0px auto;
+
+ }
+ .footer-image{
+    width: 1.61rem;
+    height: 1.61rem;
+    background-color: #FFF;
+    border-radius: 50%
+ }
+ .footer-image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    width: 25%;
+ }
+ .policy-title{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.64rem;
+    font-size: 500;
+ }
+ .footer-policy-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 20px auto;
+ }
+ .footer-last-line{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 0.64rem;
+    font-weight: 500;
+    padding-bottom: 100px;
  }
 
 
@@ -330,6 +397,9 @@ body{
 @media screen and (max-width:576px) {
     /* the nav-container start here */
     .nav-container{
+        box-shadow: 0;
+        background: transparent;
+        box-shadow: none;
         flex-direction: column;
     }
     .nav-right{
@@ -346,7 +416,6 @@ body{
     .banner-container-one{
         margin-top: 30px;
         flex-direction: column-reverse;
-    
     }
     .banner-one-left{
         display: flex;
@@ -368,6 +437,7 @@ body{
     .banner-container-two{
         flex-direction: column;
         margin-top: 30px;
+        background: transparent;
     }
     .banner-two-right{
         width: 80%;
@@ -405,6 +475,33 @@ body{
         padding: 30px;
     }
     /* the suggest-game-container start here  */
+    .suggest-games-container{
+        gap: 5px;
+        padding: 30px 15px;
+        background: transparent;
+    }
+    .suggest-game-image{
+        height: 1.42rem;
+        width: 1.42rem;
+        border-radius: 50%;
+     }
+     .suggest-game-name{
+        font-size: 0.707rem;
+     }
+
+     /* the footer-container start here */
+
+     .footer-policy-container,
+     .footer-image-container,
+     .footer-information{
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+     }
+     .footer-policy-container{
+        width: 60%;
+     }
+     
     
     
 }
@@ -418,6 +515,7 @@ body{
 
     .nav-container{
         flex-direction: column;
+        
     }
 
 
@@ -471,4 +569,13 @@ body{
         padding: 30px;
     }
     /* the suggest-game-container start here  */
+    .suggest-games-container{
+        gap: 15px;
+        padding: 30px 15px;
+    }
+    .suggest-game-image{
+        height: 1.8rem;
+        width: 1.8rem;
+        border-radius: 50%;
+     }
 }
