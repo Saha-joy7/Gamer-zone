@@ -223,6 +223,7 @@ body{
     width: 23%;
     height: auto;
     border-radius: 16px;
+    position: relative;
 }
 
 .image-img{
@@ -232,15 +233,22 @@ body{
 .image-img{
     background-color: #0B0223;
 }
-.unique-card{
-    position: relative;
 
-}
 .Image-text{
     position: absolute;
     top: 15%;
     left: 30%;
+    display: none;
+   
 }
+.card:hover .Image-text{
+    display: block;
+}
+.card:hover {
+    filter: brightness(50%);
+}
+
+
 .image-word{
     color: #F948B2;
 }
@@ -249,12 +257,7 @@ body{
 .card-image{
     width: 100%;
 }
-.card-image-extra:hover{
-    border-radius: 16px;
-   background-color: #000000;
 
-   
-}
 .video-cards{
     display: flex;
     justify-content: space-evenly;
