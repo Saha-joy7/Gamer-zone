@@ -10,12 +10,11 @@
     color: #F948B2;
 }
 body{
-    width: 930px;
+    max-width: 930px;
     margin: 0px auto;
 }
 
 /* the nav-container start here */
-
 .nav-container{
     padding: 10px;
     height: auto;
@@ -225,6 +224,28 @@ body{
     height: auto;
     border-radius: 16px;
 }
+
+.image-img{
+    width: 40px;
+    background-color: #fff;
+}
+.image-img{
+    background-color: #0B0223;
+}
+.unique-card{
+    position: relative;
+
+}
+.Image-text{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.image-word{
+    color: #F948B2;
+}
+
+
 .card-image{
     width: 100%;
 }
@@ -493,11 +514,11 @@ body{
         font-size: 0.5rem;
     }
     .banner-one-right{
-        width: 80%;
+        width: 60%;
         margin-top: 50px;
     }
     .banner-one-left{
-        width: 80%;
+        width: 50%;
     }
 
     /* the banner-container-two start here */
@@ -509,7 +530,7 @@ body{
         background: transparent;
     }
     .banner-two-right{
-        width: 80%;
+        width: 60%;
        text-align: center;
        font-size: 0.5rem;
     }
@@ -527,18 +548,18 @@ body{
 
     }
 
-    /* the nav-container start here */
+    /* the game-container start here */
     
     .game-left{
         width:80%;
         margin-top: 40px;
     }
     .game-small-image{
-        width: 170px;
-        height: 190px;
+        width: 120px;
+        height: 140px;
         position: absolute;
-        margin-top: 75%;
-        margin-left: -20%;
+        margin-top: 25%;
+        margin-left: -15%;
     }
     .game-right{
         width: 90%;
@@ -550,17 +571,17 @@ body{
     }
     /* the suggest-game-container start here  */
     .suggest-games-container{
-        column-gap: 50px;
-        padding: 100px;
+        column-gap: 10px;
+        padding: 15px;
         background: transparent;
     }
     .suggest-game-image{
-        height: 2.42rem;
-        width: 2.42rem;
+        height: 1.42rem;
+        width: 1.42rem;
         border-radius: 50%;
      }
      .suggest-game-name{
-        font-size: .907rem;
+        font-size: .707rem;
      }
 
      /* the careers-container start here */
@@ -604,6 +625,9 @@ body{
 
     .nav-container{
         flex-direction: column;
+        box-shadow: 0;
+        background: transparent;
+        box-shadow: none;
         
     }
 
@@ -642,8 +666,12 @@ body{
         margin-top: 30px;
     }
     .banner-two-right{
-        width: 80%;
+        width: 50%;
        text-align: center;
+    }
+    .banner-two-button{
+       margin-right: 100px;
+        
     }
 
     /* the video-container start here */
@@ -659,12 +687,12 @@ body{
     }
     /* the suggest-game-container start here  */
     .suggest-games-container{
-        column-gap: 45px;
-        padding: 30px 15px;
+        column-gap: 25px;
+        padding: 30px 35px;
     }
     .suggest-game-image{
-        height: 2.8rem;
-        width: 2.8rem;
+        height: 2.1rem;
+        width: 2.1rem;
         border-radius: 50%;
      }
 }
